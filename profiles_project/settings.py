@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--)9&cyh6j7=2tz)%0w&=$!ziba&v&$qdy=s5spt*!*^_f6o%f$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+import os
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-35-178-213-135.eu-west-2.compute.amazonaws.com', 
+    '172-31-31-0'
+]
 
 
 # Application definition
