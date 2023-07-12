@@ -5,6 +5,14 @@ from django.contrib.auth.models import BaseUserManager
 from django.conf import settings
 
 
+from profiles_api import models
+from profiles_api.models import ProfileFeedItem
+
+
+
+
+
+
 
 class UserProfileManager(BaseUserManager):
     """manager for user profile"""
